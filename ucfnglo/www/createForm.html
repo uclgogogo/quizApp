@@ -1,0 +1,57 @@
+<!doctype html>
+
+<head>
+<title>Simple Form Creation Example</title>
+</head>
+
+<body>
+<h5> This is a simple form</h5>
+
+<div>
+<label for="name">Name</label><input type="text" size="25" id="name"/><br />
+<label for="surname">Surname</label><input type="text" size="25" id="surname"/><br />
+<label for="module">Module Title</label><input type="text" size="25" id="module"/><br />
+</div>
+
+<div>
+<h6>Type in the latitude and longitude of your current location</h6>
+<label for="latitude">Latitude</label><input type="text" size="25" id="latitude"/><br />
+<label for="longitude">Longitude</label><input type="text" size="25" id="longitude"/><br />
+</div>
+
+<div>
+<h6>Would you like lectures in the morning or afternoon?</h6>
+Morning: <input type="radio" name="amorpm" id="morning" /><br />
+Afternoon: <input type="radio" name="amorpm" id ="afternoon"/><br />
+</div>
+
+<div>
+<h6>Which modules are you taking?</h6>
+CEGEG077: <input type="checkbox" name="modules" id = check1 value="CEGEG077" /><br />
+CEGEG129: <input type="checkbox" name="modules" id = check2 value="CEGEG129" /><br />
+CEGEG082: <input type="checkbox" name="modules" id = check3 value="CEGEG082" /><br />
+CEGEG034: <input type="checkbox" name="modules" id = check4 value="CEGEG034" /><br />
+</div>
+
+<div>
+<h6>What is your first language?</h6>
+<select name="languageselectbox" id="languageselectbox">
+<option >English </option>
+<option>Mandarin</option>
+<option>Greek</option>
+<option>Italian</option>
+<option>Spanish</option>
+<option>Other</option>
+</select>
+<br />
+</div>
+
+<div>
+<p></p>   <!-- Add a blank line -->
+<button id="startUpload" onclick="startDataUpload()">Start Data Upload</button>
+<div id="dataUploadResult">The result of the upload goes here</div>
+</div>
+
+<script src="js/uploadData.js"> </script>
+
+</body>
