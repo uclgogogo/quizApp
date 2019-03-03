@@ -22,7 +22,6 @@ function showPosition(position) {
 
 //measure the distance from user location
 function getDistance() {
-    alert('getting distance');
 // getDistanceFromPoint is the function called once the distance has been found
     navigator.geolocation.getCurrentPosition(getDistanceFromPoint);
 // getDistanceFromMultiplePoints is the function called once the distance has been found
@@ -55,7 +54,6 @@ function getDistanceFromMultiplePoints(position) {
             closestQuake = obj.properties.place;
         }
     }
-    alert("Earthquake: " + closestQuake + " is distance " + minDistance + "away");
 }
 
 
